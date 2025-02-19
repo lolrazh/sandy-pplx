@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255);
+}
+
+/* Hide all scrollbar buttons */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+  display: none;
+  height: 0;
+  width: 0;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255) transparent;
+}
+
+/* Prevent flickering during transitions */
+* {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Prose overrides for monospace theme */
+.prose-invert {
+  --tw-prose-body: rgb(var(--foreground-rgb));
+  --tw-prose-headings: rgb(var(--foreground-rgb));
+  --tw-prose-links: #888888;
+  --tw-prose-code: #cccccc;
+  --tw-prose-pre-code: #cccccc;
+  --tw-prose-pre-bg: #111111;
+  font-family: monospace;
+}
+
+.prose-response {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: rgb(var(--foreground-rgb));
+}
+
+.prose-thinking {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: #999999;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

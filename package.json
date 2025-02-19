@@ -1,0 +1,46 @@
+{
+  "name": "template-2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^1.1.2",
+    "@ai-sdk/openai": "^1.1.2",
+    "@deepgram/sdk": "^3.6.0",
+    "@langchain/openai": "^0.3.17",
+    "@tavily/core": "^0.0.2",
+    "@upstash/ratelimit": "^2.0.5",
+    "@upstash/redis": "^1.34.3",
+    "ai": "^3.4.33",
+    "date-fns": "^3.6.0",
+    "firebase": "^10.13.0",
+    "framer-motion": "^11.3.31",
+    "katex": "^0.16.21",
+    "langchain": "^0.3.12",
+    "lucide-react": "^0.436.0",
+    "next": "^14.2.23",
+    "openai": "^4.80.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^9.0.3",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0",
+    "replicate": "^0.32.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
